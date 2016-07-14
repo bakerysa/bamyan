@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+header .sticky-nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1001;
+}
+
+header .sticky-nav.stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+header #logo h3:hover {
+    color: #c0392b;
+}
+
+nav#menu {
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+}
+
+nav#menu li {
+    float:left;
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 45px;
+    text-transform: lowercase;
+}
+
+nav#menu li a:hover {
+    color: #000;
+}
+
+#foot {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#foot li {
+    float:left;
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 45px;
+    text-transform: lowercase;
+}
+
+.logo {
+    float:left;
+    left: 0;
+    top: 0;
+}
+
+	#section1{
+		background-color: #ffbc15;
+		padding: 30%;
+	}
+
+.icon i{
+    font-weight: 400;
+    line-height: 80px;
+    font-size: 45px;
+    color: #f45625;
+}
+
+	#section2{
+		background-color: #f45625;
+		padding: 30%;
+	}
+	#section3{
+		background-color: #342e8e;
+		padding: 30%;
+	}
+	#section4{
+		background-color: #4bef91;
+		padding: 30%;
+	}
+	#section5{
+		background-color: #a31d99;
+		padding: 30%;
+	}
+	#section6{
+		background-color: #55c3f2;
+		padding: 30%;
+	}
+	#section7{
+		background-color: #ffbc15;
+		padding: 30%;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5;
+		font-family: 'Roboto', sans-serif;
+		color: #f45625;
+		margin:0;
+		padding:0;
+        text-transform: uppercase;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+
+	.slide{
+		background-size: cover;
+	}
