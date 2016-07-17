@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bamyan Media</title>
+    <meta name="description" content="Bakery Boilerplate">
+    <meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/vendor/css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="src/vendor/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="sticky-nav">
+            <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
+            <nav id="menu">
+                <ul id="menu-nav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="work.html">our work</a></li>
+                    <li><a href="contact.html">get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="fullpage">
+        <div class="section" id="section4">
+            <div class="col-md-3">
+                <img src="img/512.png" class="img-responsive">
+                <h3>Want to bring our shows to your area?</h3>
+                <p>We work with local teams</p>
+                <li><a href="mailto:contact@bamyan.org"><p>contact@bamyan.org</p></a></li>
+            </div>
+            <div class="col-md-3">
+                <img src="img/512.png" class="img-responsive">
+                <h3>Want to become a partner?</h3>
+                <p>We work with local teams</p>
+                <li><a href="mailto:partners@bamyan.org"><p>partners@bamyan.org</p></a></li>
+            </div>
+            <div class="col-md-3">
+                <img src="img/512.png" class="img-responsive">
+                <h3>Are you looking for a job?</h3>
+                <p>We work with local teams</p>
+                <li><a href="mailto:jobs@bamyan.org"><p>jobs@bamyan.org</p></a></li>
+            </div>
+            <div class="col-md-3">
+                <img src="img/512.png" class="img-responsive">
+                <h3>Do you just want to chat?</h3>
+                <p>We work with local teams</p>
+                <li><a href="mailto:info@bamyan.org"><p>info@bamyan.org</p></a></li>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <h3>UNITED STATES</h3>
+            </div>
+                <div class="col-md-4">
+                    <p>+01 509-763-9937</p>
+                    <li><a href="mailto:info@bamyan.org"><p>info@bamyan.org</p></a></li>
+            </div>
+                <div class="col-md-4">
+                    <p>1598 Sun Valley Road <br> Leavenworth,<br> WA 98826 <br> USA</p>
+            </div>
+                <div class="col-md-4">
+                    <h3>MIDDLE EAST</h3>
+            </div>
+                <div class="col-md-4">
+                    <p>+01 509-763-9937</p>
+                    <li><a href="mailto:info@bamyan.org"><p>info@bamyan.org</p></a></li>
+            </div>
+                <div class="col-md-4">
+                    <p>1598 Sun Valley Road <br> Leavenworth,<br> WA 98826 <br> USA</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Scripts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="src/vendor/js/jquery.fullPage.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['firstPage', 'secondPage'],
+            navigation: false,
+            navigationPosition: 'right',
+            showActiveTooltip: false,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: false,
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            scrollOverflow: false,
+            scrollOverflowOptions: null,
+            touchSensitivity: 15,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+
+            //Design
+            controlArrows: true,
+            verticalCentered: false,
+
+        });
+    });
+</script>
+
+</html>

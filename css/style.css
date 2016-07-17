@@ -1,6 +1,29 @@
+/* =======
+   global
+========== */
+
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FuturaLT'!important;
+}
+
+h1 {
+font-size: 5;
+color: #f45625;
+margin:0;
+padding:0;
+text-transform: uppercase;
+}
+
+h2 {
+
+}
+
+@font-face {
+  font-family: 'FuturaLT';
+  src: url('fonts/FuturaLT.eot?#iefix') format('embedded-opentype'),  url('fonts/FuturaLT.woff') format('woff'), url('fonts/FuturaLT.ttf')  format('truetype'), url('fonts/FuturaLT.svg#FuturaLT') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 header {
@@ -47,6 +70,102 @@ nav#menu li a:hover {
     color: #000;
 }
 
+/* =======
+   index
+========== */
+
+#homewrap img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 45%;
+}
+
+#contact-form {
+    margin-bottom: 0;
+}
+
+#contact-form p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border: none;
+    background: #DD9E24;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+    margin: 0;
+    resize: none;
+}
+
+#contact-form input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    width: 100%;
+    resize: vertical;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contact-form .submit {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 10px;
+    text-align: center;
+    width: auto;
+    margin-top: 0;
+}
+
+#contact-form .submit:hover {
+    color: #342e8e;
+}
+
+#response {
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+/* =======
+   about
+========== */
+
+#scroll {
+    margin-right: 20px;
+    text-align: center;
+}
+
+#scroll li {
+    text-decoration-color:  #342e8e;
+    display: inline-block;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 45px;
+    text-transform: lowercase; 
+}
+
+#scroll li a:hover {
+    color: #000;
+}
+
+/* =======
+   work
+========== */
+
 #foot {
     float: left;
     margin-right: 20px;
@@ -72,7 +191,7 @@ nav#menu li a:hover {
 
 	#section1{
 		background-color: #ffbc15;
-		padding: 30%;
+		padding: 5%;
 	}
 
 .icon i{
@@ -84,42 +203,29 @@ nav#menu li a:hover {
 
 	#section2{
 		background-color: #f45625;
-		padding: 30%;
+        padding: 5%;
 	}
 	#section3{
 		background-color: #342e8e;
-		padding: 30%;
+        padding: 5%;
 	}
 	#section4{
 		background-color: #4bef91;
-		padding: 30%;
+		padding: 5%;
 	}
 	#section5{
 		background-color: #a31d99;
-		padding: 30%;
+		padding: 5%;
 	}
 	#section6{
 		background-color: #55c3f2;
-		padding: 30%;
+		padding: 5%;
 	}
-	#section7{
-		background-color: #ffbc15;
-		padding: 30%;
-	}
+
 	#section3 h1{
 		color: #000;
 	}
 
-/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5;
-		font-family: 'Roboto', sans-serif;
-		color: #f45625;
-		margin:0;
-		padding:0;
-        text-transform: uppercase;
-	}
 
 	/* Centered texts in each section
 	* --------------------------------------- */
@@ -137,3 +243,4 @@ nav#menu li a:hover {
 	.slide{
 		background-size: cover;
 	}
+
