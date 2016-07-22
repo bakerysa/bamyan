@@ -49,8 +49,11 @@ p {
     background-size: cover;
 }
 
-.text {
-    position: relative;
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #header {
@@ -152,8 +155,6 @@ nav#menu li a:hover {
     width: 70px;
     bottom: 10px;
 }
-
-
 /* =======
    index
 ========== */
@@ -278,26 +279,37 @@ textarea:-ms-input-placeholder {
    about
 ========== */
 
-#scroll {
-    margin-right: 20px;
+#scroller {
+    position: fixed;
+    width: 100%;
+    display: block;
+    height: 60px;
+    opacity: 1;
+    top: 70px;
+    z-index: 9; 
+}
+
+nav#scroller {
+    line-height: 60px;
     text-align: center;
 }
 
-#scroll li {
-    text-decoration-color: #342e8e;
+nav#scroller li {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 25px;
     color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 45px;
+    font-size: 20px;
     text-transform: lowercase;
 }
 
-#scroll li a:hover {
-    color: #000;
+nav#scroller a {
+    color: #342e8e;
+    text-decoration: none;
 }
 
+nav#scroller li a:hover {
+    text-decoration: underline;
+}
 
 /* =======
    work
@@ -369,9 +381,6 @@ textarea:-ms-input-placeholder {
     color: #ffbc15;
 }
 
-#section3 video {
-    height: auto !important;
-}
 
 #section4 b {
     color: #342E8E;
@@ -467,34 +476,6 @@ textarea:-ms-input-placeholder {
     header .sticky-nav #mobile-nav,
     header .sticky-nav.stuck #mobile-nav {
         margin-right: 20px;
-    }
-
-    #social-area #social ul li {
-        margin-left: 15px;
-    }
-
-    #social-area #social ul li a {
-        width: 50px;
-        height: 50px;
-    }
-
-    #social-area #social ul li a span {
-        font-size: 24px;
-        line-height: 50px;
-    }
-
-    #twitter-feed {
-        padding-top: 110px;
-        padding-bottom: 110px;
-    }
-
-    .info-block a.button {
-        margin-top: 20px;
-        position: inherit;
-    }
-
-    .info-text {
-        padding-right: 0;
     }
 }
 
