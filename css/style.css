@@ -346,7 +346,8 @@ textarea:-ms-input-placeholder {
     height: 60px;
     opacity: 1;
     top: 70px;
-    z-index: 9; 
+    z-index: 9;
+    background-color: #ffbc15;
 }
 
 nav#scroller {
@@ -455,6 +456,17 @@ nav#scroller li a:hover {
 #section1 h1 {
     color: #f45625;
     margin-top: 10%;
+}
+
+#section1 h2 {
+    color: #ffbc15;
+}
+
+#section1 h4 {
+    color: #ffbc15;
+}
+#section1 p {
+    color: #ffbc15;
 }
 
 .icon i {
