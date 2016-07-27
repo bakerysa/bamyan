@@ -212,11 +212,6 @@
         <script type="text/javascript" src="js/main.js"></script>
         <script src="js/midnight.jquery.min.js"></script>
         <script>
-            $(window).load(function () {
-                $('#header').midnight();
-            });
-        </script>
-        <script>
             $(document).ready(function () {
                 $('#fullpage').fullpage({
                     //Navigation
@@ -262,6 +257,8 @@
                     responsiveWidth: 1000,
                     responsiveHeight: 700,
                     afterLoad() {
+                        $('#header').midnight();
+                       $('#footer').midnight();
                         if ($("#section6").is(".active")) {
                             document.getElementById("scroller").style.display = "none";
                         } else {

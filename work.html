@@ -134,11 +134,6 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/midnight.jquery.min.js"></script>
     <script>
-        $(window).load(function () {
-            $('#header').midnight();
-        });
-    </script>
-    <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //Navigation
@@ -177,7 +172,10 @@
                 fixedElements: '#header, #footer',
                 responsiveWidth: 1000,
                 responsiveHeight: 700,
-
+                    afterLoad() {
+                        $('#header').midnight();
+                       $('#footer').midnight();
+                      },
             });
         });
     </script>

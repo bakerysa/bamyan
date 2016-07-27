@@ -232,11 +232,6 @@
         <script type="text/javascript" src="js/main.js"></script>
         <script src="js/midnight.jquery.min.js"></script>
         <script>
-            $(window).load(function () {
-                $('#header').midnight();
-            });
-        </script>
-        <script>
             $(document).ready(function () {
                 $('#fullpage').fullpage({
                     //Navigation
@@ -279,11 +274,8 @@
                     responsiveWidth: 1000,
                     responsiveHeight: 700,
                     afterLoad() {
-                         if ($("#section1").is(".active")) {
-                             document.getElementById("footer").style.display = "none";
-                         } else {
-                              document.getElementById("footer").style.display = "block";
-                          }
+                        $('#header').midnight();
+                       $('#footer').midnight();
                       },
 
                 });

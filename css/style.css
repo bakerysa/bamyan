@@ -116,11 +116,19 @@ nav#menu li {
   color: black;
 }
 
+.midnightHeader.black path {
+ fill: black;
+}
+
 .midnightHeader.white {
   fill: white;
 }
 .midnightHeader.white a {
     color: white;
+}
+
+.midnightHeader.white path {
+   fill: white;
 }
 
 .midnightHeader.yellow {
@@ -130,6 +138,10 @@ nav#menu li {
     color: #FDBC2C;
 }
 
+.midnightHeader.yellow path{
+ fill: #FDBC2C ;
+}
+
 .midnightHeader.blue {
   fill: #342E8D;
 }
@@ -137,11 +149,19 @@ nav#menu li {
     color: #342E8D;
 }
 
+.midnightHeader.blue path {
+   fill: #342E8D;
+}
+
 .midnightHeader.transparent {
   fill: transparent;
 }
 .midnightHeader.transparent a {
     color: transparent;
+}
+
+.midnightHeader.transparent path {
+   fill: transparent;
 }
 
 nav#menu a {
@@ -161,7 +181,9 @@ nav#menu li a:hover {
     position: fixed;
     width: 100%;
     display: block;
-    height: 70px;
+    height:70px;
+    top: auto!important;
+    bottom: 0!important;
     line-height: 70px;
     opacity: 1;
     bottom: 0;
@@ -180,7 +202,6 @@ nav#menu li a:hover {
 }
 
 #footer a {
-    color: white;
     text-decoration: none;
 }
 
@@ -191,7 +212,7 @@ nav#menu li a:hover {
 #footer #donkey {
     position: fixed;
     right: 25px;
-    height: 70px;
+    height: 60px;
     width: 70px;
     bottom: 10px;
 }
