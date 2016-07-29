@@ -46,6 +46,38 @@
         </div>
     </div>
 
+        <nav class="menu-opener">
+        <div class="menu-opener-inner"></div>
+    </nav>
+    <nav class="menu">
+        <ul class="menu-inner">
+            <h3>BAMYAN MEDIA</h3>
+            <a href="index.html" class="menu-link">
+                <li>home</li>
+            </a>
+            <a href="about.html" class="menu-link">
+                <li>about</li>
+            </a>
+            <a href="work.html" class="menu-link">
+                <li>our work</li>
+            </a>
+            <a href="contact.html" class="menu-link">
+                <li>get in touch</li>
+            </a>
+            <a href="territories.html" class="menu-link">
+                <li>territories</li>
+            </a>
+            <a href="jobs.html" class="menu-link">
+                <li>jobs</li>
+            </a>
+            <a href="team.html" class="menu-link">
+                <li>team</li>
+            </a>
+            <a href="press.html" class="menu-link">
+                <li>press</li>
+            </a>
+        </ul>
+    </nav>
 
     <div id="footer">
         <ul id="bottomlinks">
@@ -128,6 +160,12 @@
     <script type="text/javascript" src="src/vendor/js/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/midnight.jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+            <script>
+            $(".menu-opener").click(function () {
+                $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+            });
+        </script>
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
@@ -167,10 +205,10 @@
                 fixedElements: '#header, #footer',
                 responsiveWidth: 1000,
                 responsiveHeight: 700,
-                    afterLoad() {
-                        $('#header').midnight();
-                       $('#footer').midnight();
-                      },
+                afterLoad() {
+                    $('#header').midnight();
+                    $('#footer').midnight();
+                },
             });
         });
     </script>
