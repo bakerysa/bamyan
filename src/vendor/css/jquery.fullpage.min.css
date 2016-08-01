@@ -75,8 +75,8 @@ html.fp-enabled {
     z-index: 4;
     top: 50%;
     cursor: pointer;
-    width: 128px;
-    height: 128px;
+    width: 26px;
+    height: 48px;
     margin-top: -38px;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -84,13 +84,13 @@ html.fp-enabled {
 }
 
 .fp-controlArrow.fp-prev {
-    left: 1%;
-    background: url(../../../img/prev.svg) no-repeat; 
+    left: 2%;
+    background: url(../../../img/prev.png) no-repeat; 
 }
 
 .fp-controlArrow.fp-next {
-    right: 1%;
-    background: url(../../../img/next.svg) no-repeat;
+    right: 2%;
+    background: url(../../../img/next.png) no-repeat;
 }
 
 .fp-scrollable {
