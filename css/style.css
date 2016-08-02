@@ -90,6 +90,7 @@ p {
     text-decoration: underline;
 }
 
+
 #scroller li.active {
     text-decoration: underline;
 }
@@ -559,7 +560,6 @@ nav#scroller li a:hover {
   box-sizing: border-box;
 }
 
-
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
   -webkit-transition: 250ms all;
   transition: 250ms all;
@@ -686,8 +686,8 @@ nav#scroller li a:hover {
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+      .menu {
     height: auto;
   }
   .menu-inner {
@@ -709,9 +709,13 @@ nav#scroller li a:hover {
     #footer {
         display:none;
     }
+    .vertical-center {
+        display:block;
+    }
+    
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     
 .menu-opener {
         display:none;
