@@ -25,7 +25,6 @@ body {
 h1 {
     font-family: 'FuturaStd-Bold'!important;
     font-size: 5;
-    color: #f45625;
     margin: 0;
     padding: 0;
 }
@@ -34,21 +33,66 @@ h2 {
     font-family: 'FuturaStd-Bold'!important;
 }
 
+h3 {
+    font-family: 'FuturaStd-Medium'!important;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
 p {
     font-size: 16px;
     letter-spacing: 1px;
 }
 
+.bold {
+    font-family: 'FuturaStd-Bold'!important;
+}
+.orange {
+    color: #f45625;
+}
+
+.yellow {
+   color: #ffbc15;
+}
+
+.blue {
+    color: #342E8E;
+}
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #000000;
+}
+
+.h-textleft {
+    text-align: left;
+}
+.h-textright {
+    text-align: right;
+}
+
+.h-width {
+    max-width:450px;
+    margin: 0 auto;
+}
+
+.h-width-e {
+    max-width:550px;
+    margin: 0 auto;
+}
+
 .h-padding-sm {
-    padding: 2em;
+    padding: 1em;
 }
 
 .h-padding-md {
-    padding: 4em;
+    padding: 2em;
 }
 
 .h-padding-lg {
-    padding: 8em;
+    padding: 4em;
 } 
 
 .section {
@@ -271,6 +315,7 @@ nav#menu li a:hover {
     padding: 15px;
     margin: 0;
     resize: none;
+    outline: none;
 }
 
 #contact-form input {
@@ -293,9 +338,9 @@ nav#menu li a:hover {
     float: right;
     color: #fff;
     display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 10px 10px;
+    font-size: 20px;
+    font-family: 'FuturaStd-Bold';
+    padding: 5px 5px;
     text-align: center;
     width: auto;
     margin-top: 0;
@@ -354,8 +399,12 @@ textarea:-ms-input-placeholder {
     color: #4bef91;
 }
 
-#section6 #section7 .fa-inverse:hover {
-    color: white;
+ .fa-inverse:hover {
+    color: #fff!important;
+}
+
+.fa-circle {
+    color: black;
 }
 
 /* =======
@@ -363,14 +412,13 @@ textarea:-ms-input-placeholder {
 ========== */
 
 #scroller {
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: block;
     height: 60px;
     opacity: 1;
     top: 70px;
     z-index: 9;
-    background-color: #ffbc15;
 }
 
 nav#scroller {
@@ -414,6 +462,7 @@ nav#scroller li a:hover {
     padding: 15px;
     margin: 0;
     resize: none;
+    outline: none;
 }
 
 #contact-form-alt input {
@@ -436,9 +485,9 @@ nav#scroller li a:hover {
     float: right;
     color: #fff;
     display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 10px 10px;
+    font-size: 20px;
+    font-family: 'FuturaStd-Bold';
+    padding: 2px 2px;
     text-align: center;
     width: auto;
     margin-top: 0;
@@ -477,25 +526,13 @@ nav#scroller li a:hover {
 }
 
 #section1 h1 {
-    color: #f45625;
     margin-top: 10%;
-}
-
-#section1 h2 {
-    color: #ffbc15;
-}
-
-#section1 h4 {
-    color: #ffbc15;
-}
-#section1 p {
-    color: #ffbc15;
 }
 
 .icon i {
     position: relative;
     line-height: 80px;
-    font-size: 80px;
+    font-size: 160px;
     color: #f45625;
 }
 
@@ -505,48 +542,8 @@ nav#scroller li a:hover {
     width: 100%;
 }
 
-#section2 h1 {
-    color: #fff;
-}
-
-#section2 p {
-    color: #fff;
-}
-
 .img-responsive {
     margin: 0 auto;
-}
-
-#section3 h1 {
-    color: #fff;
-}
-
-#section3 p {
-    color: #fff;
-}
-
-#section3 p b {
-    color: #ffbc15;
-}
-
-#section4 h1 {
-    color: black;
-}
-
-#section4 b {
-    color: #342E8E;
-}
-
-#section5 h1 {
-    color: #ffbc15;
-}
-
-#section5 p {
-    color: #ffbc15;
-}
-
-#section6 h1 {
-    color: black;
 }
 
 #section7 h1 {
@@ -617,7 +614,7 @@ nav#scroller li a:hover {
 }
 
 .menu {
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.75);
   color: transparent;
   height: 64px;
   position: fixed;
@@ -627,13 +624,13 @@ nav#scroller li a:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 0rem;
+  width: 100%;
   z-index: 1;
 }
 .menu.active {
   width: -webkit-calc(100% - 2rem);
   width: calc(100% - 2rem);
-    z-index: 3;
+  z-index: 3;
 }
 .menu.active .menu-link {
   color: white;
@@ -652,8 +649,8 @@ nav#scroller li a:hover {
   height: 100%;
   list-style-type: none;
   margin: 0;
-  margin-left: 4rem;
   padding: 0;
+  padding-bottom: 5%;
 }
 
 .menu-link {
@@ -698,8 +695,7 @@ nav#scroller li a:hover {
     font-size: 1.2em;
   }
   .menu.active {
-    width: -webkit-calc(100% - 0.5rem);
-    width: calc(100% - 0.5rem);
+    width: 100%;
   }
     
     #header {
@@ -709,6 +705,11 @@ nav#scroller li a:hover {
     #footer {
         display:none;
     }
+    
+    #scroller {
+        display: none!important;
+    }
+    
     .vertical-center {
         display:block;
     }
