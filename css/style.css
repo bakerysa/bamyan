@@ -49,7 +49,9 @@ p {
 }
 
 .bold {
-    font-family: 'FuturaStd-Bold'!important;
+    font-family: "futura-pt"!important;
+    font-weight: 700;
+    font-style: normal;
 }
 .orange {
     color: #f45625;
@@ -343,7 +345,8 @@ nav#menu li a:hover {
     color: #fff;
     display: inline-block;
     font-size: 20px;
-    font-family: 'FuturaStd-Bold';
+    font-family: "futura-pt";
+    font-weight: 900
     padding: 5px 5px;
     text-align: center;
     width: auto;
@@ -490,7 +493,9 @@ nav#scroller li a:hover {
     color: #fff;
     display: inline-block;
     font-size: 20px;
-    font-family: 'FuturaStd-Bold';
+    font-family: "futura-pt";
+    font-weight: 900;
+    font-style: normal;
     padding: 2px 2px;
     text-align: center;
     width: auto;
